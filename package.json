@@ -1,0 +1,24 @@
+{
+  "name": "sticky-notes-app",
+  "version": "1.0.0",
+  "main": "sticky.js",
+  "scripts": {
+    "build:css": "npx postcss public/css/sticky.css -o public/css/sticky.css",
+    "dev": "concurrently \"npm run build:css -- -w\" \"nodemon server.js\"",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10"
+  }
+}
